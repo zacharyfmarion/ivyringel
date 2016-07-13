@@ -14,9 +14,11 @@ gulp.task('serve', () => {
 gulp.task('sass', () => {
   gulp.src('./sass/**/*.scss')
       .pipe(sass())
-      .pipe(gupl.dest('./css/'))
+      .pipe(gulp.dest('./css/'))
 })
 
-gulp.task('default', ['serve'], () => {
+gulp.task('watch', () => {
   gulp.watch('./sass/**/*.scss', ['sass'])
 })
+
+gulp.task('default', ['watch'])

@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gulp-sass": "^2.3.2",
     "gulp-server-livereload": "^1.8.1"
   }
 }

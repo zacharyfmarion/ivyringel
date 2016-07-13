@@ -1,0 +1,71 @@
+/*! App styles for ivyringel.com  */
+@import 'variables';
+
+body {
+  font-family: "Arimo";
+}
+
+.site-container {
+  //text-align: center;
+  //width: 100%;
+  //height: 100%;
+  //margin: 0;
+  //padding: 0;
+  //border: none;
+
+  .site-background {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #009688;
+    z-index: -1;
+  }
+
+  .site-body {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    height: 800px;
+    background: #afafaf;
+
+    .navbar {
+      border-radius: 0; 
+    }
+
+  }
+
+}
+
+#navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  //text-transform: uppercase;
+
+  .navbar-brand {
+  }
+
+  .navbar-right>li>a {
+  }
+
+}
+
+.jumbotron {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-radius: 0 !important;
+  background-image: url('../resources/portrait_6.JPG');
+  background-size: cover;
+  background-position: center center;
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+#footer {
+  margin-bottom: 0;
+}
