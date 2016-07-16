@@ -15,55 +15,82 @@
 .shadow-5 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
 
-h1 {
-  font-size: 5.9vw; }
-
-h2 {
-  font-size: 3.0vh; }
-
-p {
-  font-size: 2vmin; }
-
 body {
-  font-family: "Arimo"; }
+  font-family: "Arimo";
+  background: #c3c3c3; }
 
-@media (max-width: 767px) {
-  .site-container .site-body {
-    width: 90% !important; } }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .site-container .site-body {
-    width: 90% !important; } }
 .site-container .site-background {
   position: fixed;
-  top: 30%;
+  background: #fff;
+  top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background: #009688;
+  height: 250px;
   z-index: -1; }
 .site-container .site-body {
   width: 70%;
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  height: 800px;
-  background: #afafaf; }
-  .site-container .site-body .navbar {
-    border-radius: 0; }
+  min-height: 600px;
+  background: #fff;
+  border-radius: 2px; }
+  .site-container .site-body #navbar {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: none;
+    background-color: cadetblue;
+    margin: 0; }
+    .site-container .site-body #navbar .navbar-brand {
+      color: #fff !important; }
+    .site-container .site-body #navbar li a {
+      color: #fff !important; }
+.site-container #footer {
+  border-radius: 0 0 3px 3px;
+  background: #484848;
+  height: 100px;
+  border: none; }
+
+.navbar-default .navbar-nav > .active > a {
+  background: #4c7e80 !important; }
 
 .jumbotron {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  border-radius: 0 !important;
-  background-image: url("../resources/portrait_6.JPG");
+  background-image: url("../resources/concert.jpg");
   background-size: cover;
-  background-position: center center; }
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 425px;
+  margin-bottom: 0; }
 
 article {
   margin-bottom: 30px; }
+  article p {
+    font-size: 16px; }
+    article p .first-char {
+      float: left;
+      color: cadetblue;
+      font-size: 75px;
+      line-height: 50px;
+      font-family: Cr;
+      padding-top: 8px;
+      padding-right: 8px;
+      padding-left: 3px; }
 
-#footer {
-  margin-bottom: 0; }
+@media (max-width: 767px) {
+  .site-body {
+    width: 100% !important;
+    margin: 0 !important;
+    margin-top: 0 !important; }
+
+  .jumbotron {
+    height: 250px; }
+
+  article > h1 {
+    text-align: center; }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background: #fff !important; }
+
+  #footer {
+    border-radius: 0 !important;
+    margin-bottom: 0 !important; } }
