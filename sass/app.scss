@@ -45,6 +45,14 @@ body {
   }
 }
 
+@include media("retina2x") {
+  .site-container{
+    .site-body {
+      width: 90% !important;
+    }
+  }
+}
+
 .site-container {
   //text-align: center;
   //width: 100%;

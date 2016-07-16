@@ -30,6 +30,9 @@ body {
 @media (max-width: 767px) {
   .site-container .site-body {
     width: 90% !important; } }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .site-container .site-body {
+    width: 90% !important; } }
 .site-container .site-background {
   position: fixed;
   top: 30%;
