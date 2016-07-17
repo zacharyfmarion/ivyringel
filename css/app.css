@@ -16,10 +16,10 @@
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
 
 .btn-primary {
-  background-color: cadetblue !important; }
+  background-color: #009688 !important; }
 
 .panel-heading {
-  background-color: cadetblue !important; }
+  background-color: #484848 !important; }
   .panel-heading h4 {
     color: #fff;
     display: inline-block; }
@@ -41,7 +41,6 @@ body {
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  min-height: 600px;
   background: #fff;
   border-radius: 2px; }
   .site-container .site-body .container {
@@ -50,20 +49,29 @@ body {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border: none;
-    background-color: cadetblue;
+    background-color: #009688;
     margin: 0; }
     .site-container .site-body #navbar .navbar-brand {
       color: #fff !important; }
     .site-container .site-body #navbar li a {
       color: #fff !important; }
+  .site-container .site-body .footer-links {
+    text-align: right;
+    padding: 10px;
+    padding-right: 30px; }
+  .site-container .site-body .footer-author {
+    padding: 10px;
+    padding-left: 30px; }
+  .site-container .site-body .footer-col {
+    color: #fff; }
 .site-container #footer {
   border-radius: 0 0 3px 3px;
   background: #484848;
-  height: 100px;
-  border: none; }
+  border: none;
+  margin: 0; }
 
 .navbar-default .navbar-nav > .active > a {
-  background: #4c7e80 !important; }
+  background: #00635a !important; }
 
 .jumbotron {
   background-image: url("../resources/concert.jpg");
@@ -79,7 +87,7 @@ article {
     font-size: 16px; }
     article p .first-char {
       float: left;
-      color: cadetblue;
+      color: #009688;
       font-size: 75px;
       line-height: 50px;
       font-family: Cr;
@@ -104,4 +112,8 @@ article {
 
   #footer {
     border-radius: 0 !important;
-    margin-bottom: 0 !important; } }
+    margin-bottom: 0 !important; }
+
+  .footer-col {
+    text-align: center !important;
+    padding: 10px !important; } }

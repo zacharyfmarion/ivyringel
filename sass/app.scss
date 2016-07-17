@@ -31,7 +31,7 @@
 }
 
 .panel-heading {
-  background-color: $primary !important;
+  background-color: $dark !important;
 
   h4 {
     color: #fff;
@@ -62,7 +62,7 @@ body {
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    min-height: 600px;
+    //min-height: 600px;
     background: #fff;
     border-radius: 2px;
 
@@ -89,13 +89,28 @@ body {
 
     }
 
+    .footer-links {
+      text-align: right; 
+      padding: 10px;
+      padding-right: 30px;
+    }
+
+    .footer-author {
+      padding: 10px;
+      padding-left: 30px;
+    }
+
+    .footer-col {
+      color: #fff;
+    }
+
   }
 
   #footer {
     border-radius: 0 0 3px 3px; 
     background: #484848;
-    height: 100px;
     border: none;
+    margin: 0;
   }
 
 }
@@ -159,4 +174,9 @@ article {
     border-radius: 0 !important; 
     margin-bottom: 0 !important;
   }
+  .footer-col {
+    text-align: center !important; 
+    padding: 10px !important;
+  }
 }
+
