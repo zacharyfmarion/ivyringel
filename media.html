@@ -9,6 +9,7 @@
   <!--<link rel="stylesheet" href="https://bootswatch.com/2/flatly/bootstrap.min.css">-->
   <link href="https://fonts.googleapis.com/css?family=Arimo|Crimson+Text|Droid+Sans|Droid+Serif" rel="stylesheet">
   <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 
@@ -35,13 +36,118 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="index.html">Home</a></li>
-              <li class="active"><a href="media.html">Music</a></li>
+              <li class="active"><a href="media.html">Media</a></li>
               <li><a href="schedule.html">Schedule</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
       </nav> 
+      <div class="container">
+        <h1>Recordings</h1>
+        <hr>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <button role="button" class="btn play-button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span class="glyphicon glyphicon-play"></span>
+              </button>
+              <h4 class="panel-title">
+                Beethoven #5 or something
+              </h4>
+              <span class="time">5:31</span>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <button class="collapsed btn play-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <span class="glyphicon glyphicon-play"></span>
+              </button>
+              <h4 class="panel-title">
+                Beethoven #5 or something
+              </h4>
+              <span class="time">5:31</span>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <button class="collapsed btn play-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <span class="glyphicon glyphicon-play"></span>
+              </button>
+              <h4 class="panel-title">
+                Beethoven #5 or something
+              </h4>
+              <span class="time">5:31</span>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1>Photos</h1>
+        <hr>
+        
+        <div class="row photos" itemscope itemtype="http://schema.org/ImageGallery">
+
+          <figure itemprop="associatedMedia" itemtype="http://schema.org/ImageObject" itemscope="">
+            <a href="resources/concert.jpg" itemprop="contentUrl" data-size="700x467" data-caption="Credits: Ken Ge Photography">
+              <img class="grid-item" src="resources/concert.jpg" alt="">
+            </a>
+          </figure>
+        
+          <figure itemprop="associatedMedia" itemtype="http://schema.org/ImageObject" itemscope="">
+            <a href="resources/portrait_1.png" itemprop="contentUrl" data-size="700x1050" data-caption="Credits: Color Crush Photograpy">
+              <img class="grid-item" src="resources/portrait_1.png" alt="">
+            </a>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemtype="http://schema.org/ImageObject" itemscope="">
+            <a href="resources/portrait_2.png" itemprop="contentUrl" data-size="700x1050" data-caption="Credits: Color Crush Photograpy">
+              <img class="grid-item" src="resources/portrait_2.png" alt="">
+            </a>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemtype="http://schema.org/ImageObject" itemscope="">
+            <a href="resources/portrait_3.JPG" itemprop="contentUrl" data-size="700x1050" data-caption="Credits: Color Crush Photograpy">
+              <img class="grid-item" src="resources/portrait_3.JPG" alt="">
+            </a>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemtype="http://schema.org/ImageObject" itemscope="">
+            <a href="resources/portrait_4.JPG" itemprop="contentUrl" data-size="700x1050" data-caption="Credits: Color Crush Photograpy">
+              <img class="grid-item" src="resources/portrait_4.JPG" alt="">
+            </a>
+          </figure>
+          
+          <figure itemprop="associatedMedia" itemtype="http://schema.org/ImageObject" itemscope="">
+            <a href="resources/portrait_5.JPG" itemprop="contentUrl" data-size="700x1050" data-caption="Credits: Color Crush Photograpy">
+              <img class="grid-item" src="resources/portrait_5.JPG" alt="">
+            </a>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemtype="http://schema.org/ImageObject" itemscope="">
+            <a href="resources/portrait_6.JPG" itemprop="contentUrl" data-size="700x1050" data-caption="Credits: Color Crush Photograpy">
+              <img class="grid-item" src="resources/portrait_6.JPG" alt="">
+            </a>
+          </figure>
+        
+        </div>
+      </div> <!-- Container -->
+      <footer id="footer">
+      
+      </footer>
     </div>
   </div>
 

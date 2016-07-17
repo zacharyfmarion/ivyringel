@@ -23,8 +23,21 @@
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
+// ------------ Bootstrap Overrides ------------- //
+// ---------------------------------------------- //
+
 .btn-primary {
   background-color: $primary !important;
+}
+
+.panel-heading {
+  background-color: $primary !important;
+
+  h4 {
+    color: #fff;
+    display: inline-block;
+  }
+
 }
 
 body {

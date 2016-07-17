@@ -18,6 +18,12 @@
 .btn-primary {
   background-color: cadetblue !important; }
 
+.panel-heading {
+  background-color: cadetblue !important; }
+  .panel-heading h4 {
+    color: #fff;
+    display: inline-block; }
+
 body {
   font-family: "Arimo";
   background: #c3c3c3; }
