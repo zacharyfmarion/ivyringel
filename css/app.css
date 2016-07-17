@@ -35,6 +35,8 @@ body {
   min-height: 600px;
   background: #fff;
   border-radius: 2px; }
+  .site-container .site-body .container {
+    width: 90% !important; }
   .site-container .site-body #navbar {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;

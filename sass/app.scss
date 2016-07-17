@@ -49,6 +49,10 @@ body {
     background: #fff;
     border-radius: 2px;
 
+    .container {
+      width: 90% !important; 
+    }
+
     #navbar {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
