@@ -10,6 +10,13 @@
   <link href="https://fonts.googleapis.com/css?family=Arimo|Crimson+Text|Droid+Sans|Droid+Serif" rel="stylesheet">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="www/lib/photoswipe/dist/photoswipe.css">
+  <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+       In the folder of skin CSS file there are also:
+       - .png and .svg icons sprite, 
+       - preloader.gif (for browsers that do not support CSS animations) -->
+  <link rel="stylesheet" href="www/lib/photoswipe/dist/default-skin/default-skin.css"> 
+
 </head>
 <body>
 
@@ -98,47 +105,115 @@
         </div>
         <h1>Photos</h1>
         <hr>
+
+         <!-- Root element of PhotoSwipe. Must have class pswp. -->
+          <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+            <!-- Background of PhotoSwipe. 
+                 It's a separate element as animating opacity is faster than rgba(). -->
+            <div class="pswp__bg"></div>
+
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap">
+
+                <!-- Container that holds slides. 
+                    PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                    Don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
+
+                    <div class="pswp__top-bar">
+
+                        <!--  Controls are self-explanatory. Order can be changed. -->
+
+                        <div class="pswp__counter"></div>
+
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                              <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div> 
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Photos, onclick photswipe opens -->
         
         <div class="row photos" itemscope itemtype="http://schema.org/ImageGallery">
 
           <figure itemprop="associatedMedia" itemtype="http://schema.org/ImageObject" itemscope="">
-            <a href="resources/concert.jpg" itemprop="contentUrl" data-size="700x467" data-caption="Credits: Ken Ge Photography">
+            <a href="resources/concert.jpg" itemprop="contentUrl" data-size="960x636" data-caption="Credits: Ken Ge Photography">
               <img class="grid-item" src="resources/concert.jpg" alt="">
             </a>
           </figure>
         
           <figure itemprop="associatedMedia" itemtype="http://schema.org/ImageObject" itemscope="">
-            <a href="resources/portrait_1.png" itemprop="contentUrl" data-size="700x1050" data-caption="Credits: Color Crush Photograpy">
+            <a href="resources/portrait_1.png" itemprop="contentUrl" data-size="600x884" data-caption="Credits: Color Crush Photograpy">
               <img class="grid-item" src="resources/portrait_1.png" alt="">
             </a>
           </figure>
 
           <figure itemprop="associatedMedia" itemtype="http://schema.org/ImageObject" itemscope="">
-            <a href="resources/portrait_2.png" itemprop="contentUrl" data-size="700x1050" data-caption="Credits: Color Crush Photograpy">
+            <a href="resources/portrait_2.png" itemprop="contentUrl" data-size="600x859" data-caption="Credits: Color Crush Photograpy">
               <img class="grid-item" src="resources/portrait_2.png" alt="">
             </a>
           </figure>
 
           <figure itemprop="associatedMedia" itemtype="http://schema.org/ImageObject" itemscope="">
-            <a href="resources/portrait_3.JPG" itemprop="contentUrl" data-size="700x1050" data-caption="Credits: Color Crush Photograpy">
+            <a href="resources/portrait_3.JPG" itemprop="contentUrl" data-size="600x800" data-caption="Credits: Color Crush Photograpy">
               <img class="grid-item" src="resources/portrait_3.JPG" alt="">
             </a>
           </figure>
 
           <figure itemprop="associatedMedia" itemtype="http://schema.org/ImageObject" itemscope="">
-            <a href="resources/portrait_4.JPG" itemprop="contentUrl" data-size="700x1050" data-caption="Credits: Color Crush Photograpy">
+            <a href="resources/portrait_4.JPG" itemprop="contentUrl" data-size="600x800" data-caption="Credits: Color Crush Photograpy">
               <img class="grid-item" src="resources/portrait_4.JPG" alt="">
             </a>
           </figure>
           
           <figure itemprop="associatedMedia" itemtype="http://schema.org/ImageObject" itemscope="">
-            <a href="resources/portrait_5.JPG" itemprop="contentUrl" data-size="700x1050" data-caption="Credits: Color Crush Photograpy">
+            <a href="resources/portrait_5.JPG" itemprop="contentUrl" data-size="600x780" data-caption="Credits: Color Crush Photograpy">
               <img class="grid-item" src="resources/portrait_5.JPG" alt="">
             </a>
           </figure>
 
           <figure itemprop="associatedMedia" itemtype="http://schema.org/ImageObject" itemscope="">
-            <a href="resources/portrait_6.JPG" itemprop="contentUrl" data-size="700x1050" data-caption="Credits: Color Crush Photograpy">
+            <a href="resources/portrait_6.JPG" itemprop="contentUrl" data-size="600x889" data-caption="Credits: Color Crush Photograpy">
               <img class="grid-item" src="resources/portrait_6.JPG" alt="">
             </a>
           </figure>
@@ -154,5 +229,11 @@
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Core JS file -->
+  <script src="www/lib/photoswipe/dist/photoswipe.min.js"></script> 
+
+  <!-- UI JS file -->
+  <script src="www/lib/photoswipe/dist/photoswipe-ui-default.min.js"></script> 
+  <script src="js/photoswipe_init.js"></script>
 </body>
 </html>

@@ -1,0 +1,19 @@
+{
+  "name": "ivy_ringel",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "zacharyfmarion <dazackypoo@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/zacharyfmarion/ivyringel",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/lib",
+    "test",
+    "tests"
+  ]
+}
