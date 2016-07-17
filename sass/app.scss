@@ -40,6 +40,10 @@
 
 }
 
+.navbar-right {
+  font-size: 16px !important;
+}
+
 body {
   font-family: "Arimo";
   background: #c3c3c3;
@@ -76,9 +80,11 @@ body {
       border: none;
       background-color: $primary;
       margin: 0;
+      font-family: 'Crimson Text';
 
       .navbar-brand {
         color: #fff !important; 
+        font-size: 20px;
       }
 
       li {

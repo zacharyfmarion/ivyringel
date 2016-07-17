@@ -24,6 +24,9 @@
     color: #fff;
     display: inline-block; }
 
+.navbar-right {
+  font-size: 16px !important; }
+
 body {
   font-family: "Arimo";
   background: #c3c3c3; }
@@ -50,9 +53,11 @@ body {
     border-bottom-right-radius: 0;
     border: none;
     background-color: #009688;
-    margin: 0; }
+    margin: 0;
+    font-family: 'Crimson Text'; }
     .site-container .site-body #navbar .navbar-brand {
-      color: #fff !important; }
+      color: #fff !important;
+      font-size: 20px; }
     .site-container .site-body #navbar li a {
       color: #fff !important; }
   .site-container .site-body .footer-links {
