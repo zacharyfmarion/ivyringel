@@ -23,6 +23,10 @@
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
+.btn-primary {
+  background-color: $primary !important;
+}
+
 body {
   font-family: "Arimo";
   background: #c3c3c3;
@@ -57,7 +61,7 @@ body {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
       border: none;
-      background-color: $secondary;
+      background-color: $primary;
       margin: 0;
 
       .navbar-brand {
@@ -84,7 +88,7 @@ body {
 }
 
 .navbar-default .navbar-nav>.active>a {
-  background: darken($secondary, 10%) !important;
+  background: darken($primary, 10%) !important;
 }
 
 
@@ -105,7 +109,7 @@ article {
 
     .first-char {
       float: left;
-      color: $secondary;
+      color: $primary;
       font-size: 75px;
       line-height: 50px;
       font-family: Cr;
