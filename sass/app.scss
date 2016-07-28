@@ -26,6 +26,14 @@
 // ------------ Bootstrap Overrides ------------- //
 // ---------------------------------------------- //
 
+a {
+  color: $primary;
+  &:hover {
+    color: lighten($primary, 10%);
+    text-decoration: none;
+  }
+}
+
 .btn-primary {
   background-color: $primary !important;
 }
