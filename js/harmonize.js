@@ -103,7 +103,11 @@
     }.bind(this))
 
     // add event listener to the audio element
-    audio.addEventListener('ended', resetInterval)    
+    audio.addEventListener('ended', function(){
+      resetInterval(); 
+      toggleState(true);
+      progress_bar.width(0);
+    }.bind(this))
 
     // for function chaining
     return this;
