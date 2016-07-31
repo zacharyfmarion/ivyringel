@@ -50,19 +50,25 @@
         <article>
           <h1>Contact Me</h1>
           <hr>
-          <form action="submit">
+          <form action="https://formspree.io/zacharyfmarion@gmail.com" method="POST">
+            <!--<div class="form-group">-->
+              <!--<label for="inputName">Name</label>-->
+              <!--<input type="text" class="form-control" id="inputName" placeholder="Name" name="name">-->
+            <!--</div>-->
             <div class="form-group">
               <label for="inputEmail">Email</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="_replyto" required>
             </div>
             <div class="form-group">
               <label for="inputSubject">Subject</label>
-              <input type="password" class="form-control" id="inputSubject" placeholder="Subject">
+              <input type="text" class="form-control" id="inputSubject" placeholder="Subject" name="_subject">
             </div>
             <div class="form-group">
               <label for="inputMessage">Message</label>
-              <textarea class="form-control" id="inputMessage" rows="10" placeholder="Message"></textarea>
+              <textarea class="form-control" id="inputMessage" rows="10" placeholder="Message" name="message" required></textarea>
             </div>
+            <!-- Fool autosubmit forms -->
+            <input type="text" name="_gotcha" style="display:none" />
             <button type="submit" class="btn btn-primary">
               Send
               <span class="glyphicon glyphicon-send"></span>

@@ -16,7 +16,8 @@
 .harmonize {
   margin: 10px 0; }
   .harmonize .time {
-    color: #009688; }
+    color: #009688;
+    margin-top: 0; }
   .harmonize .title {
     font-size: 20px; }
   .harmonize .artist {
@@ -56,6 +57,41 @@
     -moz-column-count: 1;
     -webkit-column-count: 1;
     column-count: 1; } }
+@media (max-width: 575px) {
+  #hummel {
+    height: 80px; }
+    #hummel .play_btn {
+      line-height: 80px; }
+    #hummel .time {
+      margin-top: 10px; } }
+@media (max-width: 420px) {
+  #hummel {
+    height: 100px; }
+    #hummel .play_btn {
+      line-height: 100px; }
+    #hummel .time {
+      margin-top: 20px; } }
+@media (max-width: 454px) {
+  #ravel {
+    height: 80px; }
+    #ravel .play_btn {
+      line-height: 80px; }
+    #ravel .time {
+      margin-top: 10px; } }
+@media (max-width: 346px) {
+  #ravel {
+    height: 100px; }
+    #ravel .play_btn {
+      line-height: 100px; }
+    #ravel .time {
+      margin-top: 20px; } }
+@media (max-width: 412px) {
+  #partita {
+    height: 80px; }
+    #partita .play_btn {
+      line-height: 80px; }
+    #partita .time {
+      margin-top: 10px; } }
 .photos img {
   /* Just in case there are inline attributes */
   width: 100% !important;

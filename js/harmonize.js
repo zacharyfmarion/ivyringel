@@ -12,7 +12,7 @@
         <div class="song_name">'+ options.title +'</div>\
         <div class="artist">'+ options.artist +'</div>\
       </div>\
-      <span class="time">0:00/4:34</span>\
+      <span class="time"></span>\
     ')
 
     // VARIABLES
@@ -81,6 +81,11 @@
 
     // EVENT LISTENERS
     // ---------------------------------------------
+    audio.addEventListener('loadedmetadata', function() {
+      console.log(audio.duration);
+      update();
+    });
+
     
     // add event listener to the play button
     play_btn.on('click', function(e){

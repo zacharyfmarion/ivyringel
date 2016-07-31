@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'breakpoints';
 
 .play-button {
   background: $primary;
@@ -21,6 +22,7 @@
   margin: 10px 0; 
   .time {
     color: $primary; 
+    margin-top: 0;
   }
   .title {
     font-size: 20px;  
@@ -73,6 +75,55 @@
   -moz-column-count:    1;
   -webkit-column-count: 1;
   column-count:         1;
+  }
+}
+
+@mixin harmonize($height) {
+  height: $height; 
+  .play_btn {
+    line-height: $height; 
+  }
+  .time {
+    @if($height == 80px)  {
+      margin-top: 10px; 
+    } @else if ($height == 100px) {
+      margin-top: 20px; 
+    } @else {
+      margin-top: 0; 
+    }
+  }
+}
+
+// HUMMEL
+@media(max-width: 575px) {
+  #hummel {
+    @include harmonize(80px);
+  }
+}
+
+@media(max-width: 420px) {
+  #hummel {
+    @include harmonize(100px);
+  }
+}
+
+// RAVEL
+@media(max-width: 454px) {
+  #ravel {
+    @include harmonize(80px);
+  }
+}
+
+@media(max-width: 346px) {
+  #ravel {
+    @include harmonize(100px);
+  }
+}
+
+//PARTITA
+@media(max-width: 412px) {
+  #partita {
+    @include harmonize(80px);
   }
 }
 
