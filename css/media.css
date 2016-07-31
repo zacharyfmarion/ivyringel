@@ -13,6 +13,16 @@
   line-height: 33px;
   color: #fff; }
 
+.harmonize {
+  margin: 10px 0; }
+  .harmonize .time {
+    color: #009688; }
+  .harmonize .title {
+    font-size: 20px; }
+  .harmonize .artist {
+    color: #009688;
+    font-size: 12px; }
+
 /* 
  * Taken from https://css-tricks.com/seamless-responsive-photo-grid/
  */

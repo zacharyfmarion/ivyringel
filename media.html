@@ -7,15 +7,16 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <!--<link rel="stylesheet" href="https://bootswatch.com/2/flatly/bootstrap.min.css">-->
-  <link href="https://fonts.googleapis.com/css?family=Arimo|Crimson+Text|Droid+Sans|Droid+Serif" rel="stylesheet">
-  <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/media.css">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Arimo|Crimson+Text|Droid+Sans|Droid+Serif" rel="stylesheet">
   <link rel="stylesheet" href="www/lib/photoswipe/dist/photoswipe.css">
   <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
        In the folder of skin CSS file there are also:
        - .png and .svg icons sprite, 
        - preloader.gif (for browsers that do not support CSS animations) -->
   <link rel="stylesheet" href="www/lib/photoswipe/dist/default-skin/default-skin.css"> 
+  <link rel="stylesheet" href="css/harmonize.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/media.css">
 
 </head>
 <body>
@@ -54,56 +55,11 @@
       <div class="container">
         <h1>Recordings</h1>
         <hr>
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingOne">
-              <button role="button" class="btn play-button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <span class="glyphicon glyphicon-play"></span>
-              </button>
-              <h4 class="panel-title">
-               Composition Title
-              </h4>
-              <span class="time">5:31</span>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-              <div class="panel-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingTwo">
-              <button class="collapsed btn play-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <span class="glyphicon glyphicon-play"></span>
-              </button>
-              <h4 class="panel-title">
-               Composition Title
-              </h4>
-              <span class="time">5:31</span>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-              <div class="panel-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingThree">
-              <button class="collapsed btn play-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <span class="glyphicon glyphicon-play"></span>
-              </button>
-              <h4 class="panel-title">
-               Composition Title
-              </h4>
-              <span class="time">5:31</span>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-              <div class="panel-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
-        </div>
+
+        <div class="harmonize"></div>
+        <div class="harmonize"></div>
+        <div class="harmonize"></div>
+
         <h1>Photos</h1>
         <hr>
 
@@ -247,5 +203,30 @@
   <!-- UI JS file -->
   <script src="www/lib/photoswipe/dist/photoswipe-ui-default.min.js"></script> 
   <script src="js/photoswipe_init.js"></script>
+
+  <script src="js/harmonize.js"></script>
+  <script>
+    var songs = [
+      {
+        title: 'Ravel Piece en Forme de Habanera',
+        artist: 'Ivy Ringel',
+        src: './resources/music/ravel.wav'
+      },
+      {
+        title: 'J.S. Bach Flute Partita, Mvt. 1',
+        artist: 'Ivy Ringel',
+        src: './resources/music/partita.wav'
+      },
+      {
+        title: 'Hummel Concerto for Bassoon and Orchestra, Mvt. 3',
+        artist: 'Ivy Ringel',
+        src: './resources/music/hummel.mp3'
+      }
+    ]
+    // initialize the plugin for each song
+    $('.harmonize').each(function(index) {
+      $(this).harmonize(songs[index]);
+    })
+  </script>
 </body>
 </html>
